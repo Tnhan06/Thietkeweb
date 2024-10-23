@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutme</title>
+</head>
+<body>
+    <img src="hcmue.png.png" width="1400" height="250" alt="logo hcmue">
+    <center>
+        <h2><b><i>Chất lượng - Sáng tạo - Nhân văn</i></b></h2>
+    </center>
+    <img src="image.jpg" width="230" height="300" alt="ảnh cá nhân">
+    <style>
+        body {
+            background-color: rgb(209, 236, 236);
+        }
+
+    </style>
+    <h3>Thông tin sinh viên</h3><br>
+    <h3>Tên: Nguyễn Trần Thiện Nhân</h3><br>
+    <h3>Lớp: 50.01.CNTT.B</h3><br>
+    <h3>MSSV: 50.01.104.107</h3><br>
+    <h3>Ngày sinh: 01/08/2006</h3><br>
+    <h3>Tuổi: 18</h3><br>
+    <h3>Email: nhan1235813g@gmail.com</h3><br>
+    <h3>Sở thích: bóng bàn, cầu lông</h3>
+    <h3>Website trường: </h3>
+    <a href="https://hcmue.edu.vn/">HCMUE</a>
+    <table border="2" cellspacing="2" cellpadding="6">
+        <caption>Lịch học</caption> 
+        <tr bgcolor="lavender">
+            <th>Thứ 2</th>
+            <th>Thứ 3</th>
+            <th>Thứ 4</th>
+            <th>Thứ 5</th>
+            <th>Thứ 6</th>
+        </tr>
+        <tr bgcolor="pink">
+            <td>Triết học Mác-Lênin(1-3)</td>
+            <td>Triết học Mác-Lênin(1-3)</td>
+            <td>Toán rời rạc(1-3)</td>
+            <td>Đường lối QPAN(1-3)</td>
+            <td>Lập trình cơ bản(1-3)</td>
+        </tr>
+        <tr bgcolor="pink">
+            <td>__</td>
+            <td>__</td>
+            <td>Thiết kế web(4-6)</td>
+            <td>__</td>
+            <td>Lập trình cơ bản(4-6)</td>
+        </tr>
+        <tr bgcolor="pink">
+            <td>__</td>
+            <td>__</td>
+            <td>Cơ sở toán CNTT(7-9)</td>
+            <td>__</td>
+            <td>__</td>
+        </tr>
+        <tr bgcolor="pink">
+            <td>Cơ sở toán CNTT(10-12)</td>
+            <td>__</td>
+            <td>__</td>
+            <td>__</td>
+            <td>Giáo dục thể chất(10-12)</td>
+        </tr>
+    </table>
+    <canvas id="heartCanvas" width="400" height="400"></canvas>
+<script>
+    const canvas = document.getElementById('heartCanvas');
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'red';
+    ctx.beginPath();
+    ctx.moveTo(200, 200);
+    ctx.bezierCurveTo(200, 120, 280, 120, 280, 200);
+    ctx.bezierCurveTo(280, 280, 200, 350, 200, 370);
+    ctx.bezierCurveTo(200, 350, 120, 280, 120, 200);
+    ctx.bezierCurveTo(120, 120, 200, 120, 200, 200);
+    ctx.fill();
+</script>
+</body>
+</html>
